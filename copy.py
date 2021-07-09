@@ -2,17 +2,17 @@ class Cafe:
     def __init__(self,stock):
         self.coffee=stock
     def insert(self,money):
-        while self.coffee>0:
+        if self.coffee>0:
             if money>300:
                 self.coffee-=1
-                print('Existence of '+str(self.coffee)+' coffee')
+                print(str(self.coffee)+' coffee left')
                 return money-300
             elif money<300:
-                print('Existence of '+str(self.coffee)+' coffee')
+                print(str(self.coffee)+' coffee left')
                 return money
             else:
                 self.coffee-=1
-                print('Existence of '+str(self.coffee)+' coffee')
+                print(str(self.coffee)+' coffee left')
                 return None
         print('Closed')
         return money
