@@ -2,7 +2,9 @@ class Cafe:
     def __init__(self,stock):
         self.coffee=stock
     def insert(self,money):
-        if self.coffee>0:
+        if money<0:
+            print('Pilice caught the theif')
+        elif self.coffee>0:
             if money>300:
                 self.coffee-=1
                 print(str(self.coffee)+' coffee left')
@@ -14,7 +16,8 @@ class Cafe:
                 self.coffee-=1
                 print(str(self.coffee)+' coffee left')
                 return None
-        print('Closed')
+        else:
+            print('Closed')
         return money
 ediya=Cafe(3)
 print(ediya.insert(500))
