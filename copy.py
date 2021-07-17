@@ -3,7 +3,7 @@ class Cafe:
         self.coffee=stock
     def insert(self,money):
         if money<0:
-            print('Pilice caught the theif')
+            print('Pilice caught the thief')
         elif self.coffee>0:
             if money>300:
                 self.coffee-=1
