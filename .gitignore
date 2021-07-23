@@ -1,2 +1,5 @@
 __pycache__/
 idiya/db.sqlite3
+driver/
+ukraine.*
+hangle.py
